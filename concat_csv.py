@@ -5,27 +5,6 @@ FINAL = "twitter-datasets/both.tsv"
 FINAL_TRAIN = "twitter-datasets/train_shuffled.tsv"
 FINAL_TEST = "twitter-datasets/test_shuffled.tsv"
 
-import re
-from nltk.metrics.distance import jaccard_distance
-from nltk.tokenize import word_tokenize
-from nltk.corpus import stopwords, words
-from nltk.stem import PorterStemmer
-from nltk.util import ngrams
-import random
-
-import nltk
-
-correct_words = words.words()
-stop_words = stopwords.words()
-ps = PorterStemmer()
-
-def clean_sentence(sentence):
-    sentence = word_tokenize(sentence)
-    for word in sentence:
-        sentence[sentence.index(word)] = ps.stem(word)
-    sentence = " ".join(sentence)
-    return sentence
-
 train = []
 x = 0
 with open(FINAL, "w", encoding="utf-8") as f:
