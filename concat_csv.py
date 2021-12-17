@@ -18,7 +18,7 @@ with open(FINAL, "w", encoding="utf-8") as f:
             ####
             if len(line) > 1:
                 try:
-                    f.write(f"{line[:-1]}\t1\n")
+                    f.write(f"{line[:-1]}\t0\n")
                 except:
                     pass
             line = f2.readline()
