@@ -12,7 +12,7 @@ The second one adds some preprocessing to the sentences (eg: removes multiple sp
 A word correction using jaccard_distance from nltk library could be used but needs too much computation for the size of our dataset.
 
 ## Models
-'baseline' uses some NLP proven methods with n-grams probabilities, achieving an accuracy of ~82%.
+'baseline_ngramsweightedaverage.ipynb' uses some NLP proven methods with n-grams probabilities, achieving an accuracy of ~82%.
 
 'sentiment_analysis.ipynb' uses an LSTM model, achieving an accuracy of ~84%.
 
