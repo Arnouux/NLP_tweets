@@ -65,6 +65,8 @@ Once the model has been trained comes the moment to make the predictions of the 
 
 ## 4. What is in Archives?
 
+WORK IN PROGRESS
+
 <!-- TODO: Reformulate from here-->
 ### Data preparation
 We can explore and prepare the data files to be read by the scripts using 'explore_data.py' and 'concat_csv.py'.
