@@ -10,15 +10,10 @@ Given two datasets of tweets, containing happy or sad smiley faces, the goal is 
 ## 2. How to use "transformer.ipynb"?
 
 Files needed: <br>
-* twitter-datasets/test_data.txt
-* twitter-datasets/train_neg.txt
-* twitter-datasets/train_pos.txt
-* transformer.ipynb
-
-twitter-datasets/test_data.txt: file containing the tweets whose class we want to predict.<br>
-twitter-datasets/train_neg.txt: file containing a (short) list of tweets that we know contained a sad emoji.<br>
-twitter-datasets/train_pos.txt: file containing a (short) list of tweets that we know contained a happy emoji.<br>
-transformer.ipynb: Jupyter Notebook containing the code to predict the sentiment of the tweets in "test_data.txt" based on the other two.
+* twitter-datasets/test_data.txt: file containing the tweets whose class we want to predict.
+* twitter-datasets/train_neg.txt: file containing a (short) list of tweets that we know contained a sad emoji.
+* twitter-datasets/train_pos.txt: file containing a (short) list of tweets that we know contained a happy emoji.
+* transformer.ipynb: Jupyter Notebook containing the code to predict the sentiment of the tweets in "test_data.txt" based on the other two.
 
 On the AICrowd challenge page, there also are two additional files: "train_neg_full.txt" and "train_pos_full.txt".<br>
 Their size is too big to be accepted by Github, and they weren't used in our code, this is the reason why these files are not in this repository.
