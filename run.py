@@ -12,8 +12,8 @@
 # In[1]:
 
 
-get_ipython().system('pip install datasets')
-get_ipython().system('pip install transformers')
+# get_ipython().system('pip install datasets')
+# get_ipython().system('pip install transformers')
 
 
 # ### Import the others
