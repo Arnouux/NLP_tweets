@@ -7,13 +7,14 @@ This repository contains all the files, scripts and notebooks used for this chal
 
 Given two datasets of tweets, containing happy or sad smiley faces, the goal is to accurately predict the sentiment of new tweets, based only on their textual content.
 
-## 2. How to use "transformer.ipynb"?
+## 2. How to use?
 
 Files needed: <br>
 * twitter-datasets/test_data.txt: file containing the tweets whose class we want to predict.
 * twitter-datasets/train_neg.txt: file containing a (short) list of tweets that we know contained a sad emoji.
 * twitter-datasets/train_pos.txt: file containing a (short) list of tweets that we know contained a happy emoji.
-* transformer.ipynb: Jupyter Notebook containing the code to predict the sentiment of the tweets in "test_data.txt" based on the other two.
+* transformer.ipynb: Jupyter Notebook containing the code to predict the sentiment of the tweets in "test_data.txt" based on the other two
+* run.py: Python script converted from the Jupyter Notebook above, for a local use only
 
 On the AICrowd challenge page, there also are two additional files: "train_neg_full.txt" and "train_pos_full.txt".<br>
 Their size is too big to be accepted by Github, and they weren't used in our code, this is the reason why these files are not in this repository.
@@ -28,6 +29,7 @@ It should then be ready to use.
 
 ### Local
 
+Atlhough the `run.py` exists, we recommend to work with the Jupyter Notebook as we are dealing with large amount of data and time to process. Allows to not lose too much time in case of error when modifying the files.<br>
 For a local execution, you must comment/delete all the cells with the comment `# Specific to Colab`.<br>
 You should then be ready to execute the code.
 
