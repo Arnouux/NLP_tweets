@@ -73,7 +73,6 @@ Once the model has been trained comes the moment to make the predictions of the 
 
 `NN_probas_ngrams.ipynb`: The idea was to plug the 1/2/3-grams probabilities of each sentence to a MLP, doesn't work<br>
 `sentiment_analysis.ipynb`: Use a Long Short Term Memory neural network architecture to predict the sentiment of the tweets. Achieved an accuracy of ~0.84.<br>
-`sentiment_analysis_2.ipynb`: Evolution of the `sentiment_analysis.ipynb`<br>
 `transformer_V2.ipynb`: Attempt to limit the number of trainable parameters in the model by freezing the ones coming from BERT. Technically divided the number of trainable parameters by ~50, without any noticeable improvement in the speed of execution. There must be an error.
 
 ### "processed-datases" folder
@@ -111,3 +110,5 @@ P(sad|sentence, n) = &prod;<sub>ngram in sentence</sub>P(sad|ngram)
 
 ## References
 
+- Introduction to Natural Language Processing (CS-431)
+- [PyTorch Sentiment Analysis](https://github.com/bentrevett/pytorch-sentiment-analysis) by bentrevett
