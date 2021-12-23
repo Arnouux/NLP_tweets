@@ -110,5 +110,12 @@ P(sad|sentence, n) = &prod;<sub>ngram in sentence</sub>P(sad|ngram)
 
 ## References
 
-- Introduction to Natural Language Processing (CS-431)
+- [Introduction to Natural Language Processing](https://edu.epfl.ch/coursebook/fr/introduction-to-natural-language-processing-CS-431) (CS-431 @EPFL)
 - [PyTorch Sentiment Analysis](https://github.com/bentrevett/pytorch-sentiment-analysis) by bentrevett
+
+Temp refs:
+- https://machinelearningmastery.com/an-introduction-to-recurrent-neural-networks-and-the-math-that-powers-them/
+- https://machinelearningmastery.com/gentle-introduction-long-short-term-memory-networks-experts/
+- https://machinelearningmastery.com/the-transformer-attention-mechanism/
+- https://jalammar.github.io/illustrated-transformer/
+
