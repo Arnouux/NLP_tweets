@@ -65,7 +65,24 @@ Once the model has been trained comes the moment to make the predictions of the 
 
 ## 4. What is in Archives?
 
-WORK IN PROGRESS
+### "submited ngrams" folder
+
+Contains the scripts that formed the baseline.
+
+To do this baseline, we used the n-gram approach, classic in NLP.<br>
+A n-gram is a sequence of n consecutive words (tokens in fact, but here there is no difference). For instance, the sentence `I am a test` will contain the followings:<br>
+1-grams: `I`, `am`, `a`, `test`<br>
+2-grams: `I am`, `am a`, `a test`<br>
+3-grams: `I am a`, `am a test`<br>
+As we can see, 3-grams are the ones giving the more context (and ideally, the bigger the n, the greater the context). But we must also consider that the bigger the n, the less frequent the n-gram will be. In our case we tested that the 3-grams accuracy was inferior to the 2-grams, as was the 1-grams.
+
+The way it works is that we compute the empirical probabilities of each n-gram to be in a happy or sad tweet in our corpus, and then we can obtain the probability of a sentence to be happy or sad by computing the product of the probabilities. This has strong assuptions, like independance, but it is quick and still remarkably efficient.<br>
+P(happy|sentence, n) = &prod;<sub>ngram in sentence</sub>P(happy|ngram)<br>
+P(sad|sentence, n) = &prod;<sub>ngram in sentence</sub>P(sad|ngram)
+
+1. NaiveClassifier: The first attempt, with n=1 => accuracy=0.750, f1-score=0.749
+2. BigramsClassifier: Second attempt, n=2 => accuracy=0.818, f1-score=0.829
+3. NgramsWeighedMeanClassifier: Third attempt, using a weighed average between n=1, n=2 and n=3 => accuracy=0.826, f1-score=0.835
 
 <!-- TODO: Reformulate from here-->
 ### Data preparation
