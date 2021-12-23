@@ -78,6 +78,7 @@ As we can see, 3-grams are the ones giving the more context (and ideally, the bi
 
 The way it works is that we compute the empirical probabilities of each n-gram to be in a happy or sad tweet in our corpus, and then we can obtain the probability of a sentence to be happy or sad by computing the product of the probabilities. This has strong assuptions, like independance, but it is quick and still remarkably efficient.<br>
 P(happy|sentence, n) = &prod;<sub>ngram in sentence</sub>P(happy|ngram)<br>
+\begin{equation}P(happy \vert sentence, n) = \prod_{ngram in sentence}P(happy \vert ngram)\end{equation}<br>
 P(sad|sentence, n) = &prod;<sub>ngram in sentence</sub>P(sad|ngram)
 
 1. NaiveClassifier: The first attempt, with n=1 => accuracy=0.750, f1-score=0.749
